@@ -5,16 +5,16 @@ import * as babel from 'babel-core';
 import plugin from '../src';
 
 export default function() {
-  it('generate mocha tests and append them to existing js', () => {
-    const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-generating'), 'utf8');
+  it('generate qunit tests and append them to existing js', () => {
+    const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-qunit'), 'utf8');
 
     const result = babel.transform('"drop in some tests below this string";', {
       plugins: [
         [plugin, {
-          template: 'mocha',
+          template: 'qunit',
           paths: 'test/test-src-to-lint/**/*.js',
           optsEslint: {
-            ignore: false
+            ignore: false,
           },
         }],
       ],

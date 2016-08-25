@@ -1,5 +1,7 @@
-import testGenerating from './test-generating';
+import testMocha from './test-mocha';
+import testQUnit from './test-qunit';
 
-describe('running plugin', () => {
-  testGenerating();
+describe('generate different platforms', () => {
+  testMocha();
+  testQUnit();
 });
