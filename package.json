@@ -16,7 +16,8 @@
     "babel-register": "^6.11.6",
     "eslint": "^3.3.1",
     "eslint-plugin-shopify": "^14.0.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "right-now": "^1.0.0"
   },
   "scripts": {
     "prepublish": "babel -d lib/ src/",
