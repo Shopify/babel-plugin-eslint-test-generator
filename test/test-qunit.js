@@ -25,8 +25,6 @@ export default function() {
 
     const timeEnd = now();
 
-    console.log(timeEnd - timeStart);
-
     assert.equal(result.code, expect, 'output matched expected');
     assert.ok(timeEnd - timeStart < 600, 'should not take more 600ms');
   });
