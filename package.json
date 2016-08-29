@@ -2,11 +2,12 @@
   "name": "babel-plugin-eslint-test-generator",
   "version": "1.0.0",
   "description": "This is a Babel Plugin which will generate ci tests based on eslint results. Basically developers can't ignore linting when it's in CI",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "author": "Shopify Inc.",
   "dependencies": {
-    "babel-template": "^6.14.0"
+    "babel-template": "^6.14.0",
+    "eslint-test-generator": "^1.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
