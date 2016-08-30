@@ -36,5 +36,5 @@ The following is an example `.babelrc` file:
     + `mocha`
     + `qunit`
 - `paths` - Required Array or String. Paths can be an Array of glob strings defining which files should be linted. You can also pass in a glob string instead of an Array.
-- `file` - 
+- `file` - A String that is a file that we'd like to append the generated tests into. eg. `'test-lint.js'`
 - `optsEslint`- Optional `eslint` options object.
