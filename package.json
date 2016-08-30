@@ -7,7 +7,7 @@
   "author": "Shopify Inc.",
   "dependencies": {
     "babel-template": "^6.14.0",
-    "eslint-test-generator": "^1.0.1"
+    "eslint-test-generator": "^1.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -22,8 +22,11 @@
   },
   "scripts": {
     "prepublish": "babel -d lib/ src/",
-    "test": "mocha --compilers js:babel-register test/index.js",
-    "test2": "npm run lint-allow-warning && mocha --compilers js:babel-register test/index.js",
+    "test": "npm run lint-allow-warning && npm run build-tests && mocha --compilers js:babel-register test/index.js && npm run clean-tests",
+    "build-tests": "npm run prepublish && npm run build-test-file",
+    "clean-tests": "npm run clean-test-file",
+    "build-test-file": "BABEL_ENV=test-file babel test/test-src-to-build/ > test/out-file.js",
+    "clean-test-file": "rm test/out-file.js",
     "lint": "eslint --max-warnings 0 -c .eslintrc.json src/ test/",
     "lint-allow-warning": "eslint -c .eslintrc.json src/ test/"
   },

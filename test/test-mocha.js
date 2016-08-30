@@ -7,7 +7,7 @@ import plugin from '../src';
 
 export default function() {
   it('generate mocha tests and append them to existing js', () => {
-    const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-mocha'), 'utf8');
+    const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-mocha.js'), 'utf8');
 
     const timeStart = now();
 

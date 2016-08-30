@@ -7,7 +7,7 @@ import plugin from '../src';
 
 export default function() {
   it('generate qunit tests and append them to existing js', () => {
-    const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-qunit'), 'utf8');
+    const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-qunit.js'), 'utf8');
 
     const timeStart = now();
 

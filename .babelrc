@@ -1,5 +1,22 @@
 {
   "presets": [
     "es2015"
-  ]
+  ],
+  "env": {
+    "test-file": {
+      "plugins": [
+        [
+          "./lib/index.js",
+          {
+            "template": "mocha",
+            "paths": "test/test-src-to-lint/**/*.js",
+            "file": "b.js",
+            "optsEslint": {
+              ignore: false
+            },
+          }
+        ]
+      ]
+    }
+  }
 }
