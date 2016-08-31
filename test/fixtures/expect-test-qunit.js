@@ -1,6 +1,9 @@
 "drop in some tests below this string";
 
-test('lint all files', assert => {
+module('lint all files');
+test('test/test-src-to-lint/some-errors.js', assert => {
   assert.ok(false, 'test/test-src-to-lint/some-errors.js should pass lint.\n1:4 - Parsing error: Unexpected token ');
+});
+test('test/test-src-to-lint/some-warnings.js', assert => {
   assert.ok(true, 'test/test-src-to-lint/some-warnings.js should pass lint.');
 });
