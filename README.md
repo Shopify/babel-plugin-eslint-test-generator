@@ -29,6 +29,18 @@ The following is an example `.babelrc` file:
 }
 ```
 
+It should be noted when using this module you should use explicit paths to plugins in your `.eslintrc`. For instance:
+```
+"extends": [
+  "./node_modules/coding-standard/eslintDefaults.js",
+  "./node_modules/coding-standard/.eslintrc-es6",
+  "./node_modules/coding-standard/.eslintrc-jsx"
+]
+```
+
+More on that here:
+http://eslint.org/docs/user-guide/configuring#using-a-configuration-file
+
 
 ## Plugin Options
 
