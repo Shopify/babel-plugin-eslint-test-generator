@@ -2,13 +2,10 @@
 
 This is a Babel Plugin which will generate ci tests based on eslint results. Basically developers can't ignore linting when it's in CI
 
-## Usage
-
-[![NPM](https://nodei.co/npm/babel-plugin-eslint-test-generator.png)](https://www.npmjs.com/package/babel-plugin-eslint-test-generator)
-
-## License
-
-MIT, see [LICENSE.md](http://github.com/Shopify/babel-plugin-eslint-test-generator/blob/master/LICENSE.md) for details.
+## Installation
+```bash
+$ npm install babel-plugin-eslint-test-generator
+```
 
 ## Example
 
@@ -51,3 +48,9 @@ http://eslint.org/docs/user-guide/configuring#using-a-configuration-file
 - `paths` - Required Array or String. Paths can be an Array of glob strings defining which files should be linted. You can also pass in a glob string instead of an Array.
 - `file` - A String that is a file that we'd like to append the generated tests into. eg. `'test-lint.js'`
 - `optsEslint`- Optional `eslint` options object.
+
+## License
+
+MIT, see [LICENSE.md](http://github.com/Shopify/babel-plugin-eslint-test-generator/blob/master/LICENSE.md) for details.
+
+<img src="https://cdn.shopify.com/shopify-marketing_assets/builds/19.0.0/shopify-full-color-black.svg" width="200" />
