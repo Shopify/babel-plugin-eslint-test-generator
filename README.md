@@ -29,6 +29,7 @@ The following is an example `.babelrc` file:
 }
 ```
 
+### Using with `.eslintrc`
 It should be noted when using this module you should use explicit paths to plugins in your `.eslintrc`. For instance:
 ```
 "extends": [
