@@ -7,7 +7,7 @@
   "author": "Shopify Inc.",
   "dependencies": {
     "babel-template": "^6.14.0",
-    "eslint-test-generator": "^1.0.2"
+    "eslint-test-generator": "^1.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
