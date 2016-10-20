@@ -47,7 +47,9 @@ http://eslint.org/docs/user-guide/configuring#using-a-configuration-file
     + `qunit`
 - `paths` - Required Array or String. Paths can be an Array of glob strings defining which files should be linted. You can also pass in a glob string instead of an Array.
 - `file` - A String that is a file that we'd like to append the generated tests into. eg. `'test-lint.js'`
-- `optsEslint`- Optional `eslint` options object.
+- `optsEslint` - Optional `eslint` options object.
+- `maxWarnings` - Optional (default: -1), equivalent to `--max-warnings` on
+  eslint's CLI. `-1` means there is no maximum.
 
 ## License
 

@@ -13,6 +13,7 @@ export default (babel) => {
           const opts = Object.assign(
             {
               paths: '**/*.js',
+              maxWarnings: -1
             },
             state.opts
           );
@@ -33,6 +34,7 @@ export default (babel) => {
             template: opts.template,
             paths: opts.paths,
             optsEslint: opts.optsEslint,
+            maxWarnings: opts.maxWarnings
           });
 
           // get ast for tests
