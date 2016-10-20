@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-eslint-test-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a Babel Plugin which will generate ci tests based on eslint results. Basically developers can't ignore linting when it's in CI",
   "main": "lib/index.js",
   "license": "MIT",
