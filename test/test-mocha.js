@@ -26,7 +26,7 @@ export default function() {
     const timeEnd = now();
     const timeDiff = timeEnd - timeStart;
 
-    assert.equal(result.code, expect, 'output matched expected');
+    assert.equal(result.code.trim(), expect.trim(), 'output matched expected');
     // 1000ms because it seems that the first build takes longer
     assert.ok(timeDiff < 1000, `should not take more 1000ms it took ${timeDiff}`);
   });
