@@ -10,6 +10,6 @@ export default function() {
     const expect = fs.readFileSync(path.join(__dirname, 'fixtures', 'expect-test-file.js'), 'utf8');
     const result = fs.readFileSync(path.join(__dirname, 'out-file.js'), 'utf8');
 
-    assert.equal(result, expect, 'output matched expected');
+    assert.equal(result.trim(), expect.trim(), 'output matched expected');
   });
 }
