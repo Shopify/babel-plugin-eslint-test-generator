@@ -1,3 +1,4 @@
+[![Travis](https://travis-ci.com/Shopify/babal-plugin-eslint-test-generator.svg?branch=master)](https://travis-ci.com/Shopify/babal-plugin-eslint-test-generator)
 # babel-plugin-eslint-test-generator
 
 This is a Babel Plugin which will generate ci tests based on eslint results. Basically developers can't ignore linting when it's in CI
